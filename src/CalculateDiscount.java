@@ -12,7 +12,10 @@ public class CalculateDiscount {
         double discountAmount = (discountPercentage / 100) * originalPrice;
         double finalPrice = originalPrice - discountAmount;
 
-        System.out.print("The final price after discount is: " + finalPrice);
+        System.out.println("The final price after discount is: " + finalPrice);
+        System.out.println("The Price Was; " +  originalPrice);
+        System.out.println("Now You Have To Pay Only; "  +  finalPrice);
+
 
         scanner.close();
 
