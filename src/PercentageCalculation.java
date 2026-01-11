@@ -1,10 +1,22 @@
+import java.util.Scanner;
 public class PercentageCalculation {
     public static void main(String[] args) {
-        double totalMarks = 500.0;
-        double marksObtained = 425.0;
+        Scanner scanner = new Scanner(System.in);
 
-        double percentage = (marksObtained / totalMarks) * 100;
+        System.out.print("Enter Your Obtained marks: ");
+        double ObtainedMarks = scanner.nextDouble();
 
-        System.out.printf("Percentage: %.2f%%\n", percentage);
+        System.out.print("Enter the Total Marks: ");
+        double TotalMarks = scanner.nextDouble();
+
+        double percentage;
+
+        percentage =  (ObtainedMarks / TotalMarks) * 100;
+
+        System.out.print("Your Percentage is: " + percentage +  "%");
+
+        scanner.close();
     }
 }
+    
+
