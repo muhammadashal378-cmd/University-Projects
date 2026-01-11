@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class powerclaculation{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter The Value Of Voltage:" + "\n");
+        System.out.print("Enter The Value Of Voltage:" );
         double V = sc.nextDouble();  
     
         System.out.println("Enter The Value Of Current");
